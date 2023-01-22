@@ -4,70 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <title>Resume</title>
 </head>
 <body>
   
 <!--Mein-->
-<div>
+<div class="main">
     <!--Main content-->
-    <div >
+    <div class="main-content">
         <!--About user-->
-        <div>
-            <h2>Front-End Developer</h2>
-            <h1>Myhailo Marchuk</h1>
-            <p>Date of birth: 16 november 1991</p>
-            <p>Country: Ukraine</p>
-            <p>City: Rivne</p>
-            <p">Citizenship: Ukrainian</p>
+        <div class="about">
+            <h2 class="about-position">Front-End Developer</h2>
+            <h1 class="about-name">Myhailo Marchuk</h1>
+            <p class="about-descripton">Date of birth: <span class="about-info">16 november 1991</span></p>
+            <p class="about-descripton">Country: <span class="about-info">Ukraine</span></p>
+            <p class="about-descripton">City: <span class="about-info">Rivne</span></p>
+            <p class="about-descripton">Citizenship: <span class="about-info">Ukrainian</span></p>
         </div>
         <!--Projects-->
-            <div>
-            <h3>Projects</h3>
-            <ol>
-                <p>Site for Limited liability company "Sakma".</p>
-            </ol>
+            <div class="projects">
+                <h3 class="title">Projects</h3>
+                <ol class="projekts-list">
+                <p class="project-bracket">Site for Limited liability company "Sakma".</p>
+                </ol>
         </div>
         
         <!--Work Experience-->
-        <div>
-            <h3>Work Experience</h3>
+        <div class="work">
+            <h3 class="title">Work Experience</h3>
             <!--Compani 1-->
             <div>
-                <h4>Working with databases in MS Excel <span class="organization">Armed Forces of Ukraine</span></h4>
-                <p>July 2014 - up to now   <span class="line">|</span>   Country</p>
-                <ul>
-                    <li>Data collection and aggregation.</li>
-                    <li>Data analysis for a cycle, quarter, year.</li>
+                <h4 class="work-position">Working with databases in MS Excel <span class="organization">Armed Forces of Ukraine</span></h4>
+                <p class="period">July 2014 - up to now   <span class="line">|</span>   Country</p>
+                <ul class="work-list">
+                    <li class="work-list-item">Data collection and aggregation.</li>
+                    <li class="work-list-item">Data analysis for a cycle, quarter, year.</li>
                 </ul>
             </div>
-            
             <!--Compani 2-->
                 <div>
-                    <h4 class="work-position">Іntern <span class="organization">Limited liability company "Sakma"</span></h4>
-                    <p class="period">may 2011 - june 2011   <span class="line">|</span>   Country</p>
-                    <ul class="work-list">
-                        <li class="work-list-item">Theme development.</li>
-                        <li class="work-list-item">Work with google maps api.</li>
-                    </ul>
+                <h4 class="work-position">Іntern <span class="organization">Limited liability company "Sakma"</span></h4>
+                <p class="period">may 2011 - june 2011   <span class="line">|</span>   Country</p>
+                <ul class="work-list">
+                    <li class="work-list-item">Theme development.</li>
+                    <li class="work-list-item">Work with google maps api.</li>
+                </ul>
                 </div>
         </div>
         <!--Education-->
-        <div>
-            <h3>Education</h3>
+        <div class="education">
+            <h3 class="title">Education</h3>
             <!--Rivne State Agrarian College-->
-                <h4>Rivne State Agrarian College</h4>
-                <p>Software development</p>
-                <p>September 2008 - June 2011  <span class="line">|</span> Ukraine</p>
+                <h4 class="education-position">Rivne State Agrarian College</h4>
+                <p class="education-list">Software development</p>
+                <p class="period">September 2008 - June 2011  <span class="line">|</span> Ukraine</p>
         </div>
-        
     </div>
         <!--Sidebar-->
-    <aside> 
+    <aside class="sidebar"> 
         <img src="img/photo.jpg" alt="user photo" class="photo">
         <!--Contacts-->
-        <div>
-            <h3>Contacts</h3>
+        <div class="contacts">
+            <h3 class="sidebar-title">Contacts</h3>
             <div>
                 <p>
                     <span class="contact-type">Phone number:</span> 
@@ -80,7 +82,10 @@
                 <p>
                     <span class="contact-type">Telegram:</span>
                     <a href="tg://resolve?domain=Misha Marchuk"class="contact-link">Misha Marchuk</a>
-
+                </p>
+                <p>
+                    <span class="contact-type">Facebook:</span>
+                    <a href="https://www.facebook.com:/profile.php?id=100017401966386"class="contact-link">Misha Marchuk</a>
                 </p>
             </div>
         </div>
@@ -105,7 +110,6 @@
                 <li class="soft-skills-item"> <span class="soft-skills-text">Responsible</span></li>
                 <li class="soft-skills-item"> <span class="soft-skills-text">Communicable</span></li>
                 <li class="soft-skills-item"> <span class="soft-skills-text">Purposeful</span></li>
-                <li>tre <em>tre</em></li>
             </ul>
         </div>
     </aside>
