@@ -62,11 +62,14 @@ body {
     color: #595959;
     margin-left: 5px;
 }
+.about-menu li{
+margin-top: 10px;
 
+}
 
 /* project stiles */
 .projects {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .title {
