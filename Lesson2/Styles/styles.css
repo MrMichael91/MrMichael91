@@ -5,15 +5,14 @@ body {
     background-color: #f5f7fa;
 }
 
-/* main styles */
-.main {
+/* wrapper styles */
+.wrapper {
     display: flex;
-    flex-direction: row-reverse;
-    
     width: 1200px;
     margin: 0 auto;
 }
 
+/* main content styles */
 .main-content {
     background-color: #ffffff;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
