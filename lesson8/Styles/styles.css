@@ -1,5 +1,5 @@
 body {
-font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form {
@@ -17,10 +17,12 @@ font-family: 'Roboto', sans-serif;
     text-align: center;
     color: #FF8984;
 }
+
 .header h1 {
     padding-top: 12px;
     margin: 0;
 }
+
 .header p {
     padding-top: 4px;
     margin: 0;
@@ -39,19 +41,20 @@ font-family: 'Roboto', sans-serif;
     margin-left: 129px;
     margin-top: 0px;
     padding-left: 12px;
-    background: #88839E; 
+    background: #88839E;
     color: #FFFFFF;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+
 }
 
 .menu label:hover {
     background: #625E77;
-    border: 3px solid #FFFFFF;
-    border-left: none;
-    border-right: none;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
 }
 
 .menu label:nth-child(even) {
-    
     background: #7A7593;
 }
 
@@ -60,14 +63,7 @@ font-family: 'Roboto', sans-serif;
     background: #FF8984;
 }
 
-input:checked + span + span{
-    display: flex;
-    text-decoration: line-through;
-    color: #9B96AC;
-}
-
-input:checked + span {
-    display: flex;
+input:checked+span {
     text-decoration: line-through;
     color: #9B96AC;
 }
@@ -76,7 +72,8 @@ input:checked + span {
     width: 19px;
     align-items: center;
 }
-.text-menu {
+
+.menu input+span {
     display: flex;
     font-size: 18px;
     padding-left: 16px;
@@ -101,4 +98,4 @@ input:checked + span {
     color: #FF8984;
     background-color: #4A4F56;
     border: 0px;
-} 
+}

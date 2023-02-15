@@ -1,0 +1,148 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 1440px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+}
+
+/**Herder**/
+.header {
+    display: flex;
+    background-color: #FFF;
+    width: 1440px;
+    height: 50px;
+    padding-bottom: 70px;
+}
+
+.wrapper {
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto
+}
+
+.wrapper_nav ul li {
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+.wrapper_nav ul li a:active {
+    color: #FF9900;
+}
+
+.wrapper_nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+.wrapper_nav li:nth-child(4) {
+    margin: 0 auto;
+}
+
+.wrapper_nav a {
+    text-decoration: none;
+}
+
+.wrapper_nav ul {
+    padding-left: 0;
+}
+
+.wrapper_logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.wrapper_logo img {
+    padding-right: 12px;
+}
+
+.button_action button {
+    display: inline;
+    justify-content: space-evenly;
+    width: 110px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #FFF;
+    font-weight: 600;
+}
+
+.button_go {
+    margin-right: 25px;
+}
+
+.button_action button:hover,
+.button_first_screen:hover {
+    background-color: #FF9900;
+    color: #FFF;
+}
+
+/**First Screen**/
+
+.first_screen {
+    display: inline-flex;
+    width: 1440px;
+    height: 600px;
+    background-color: #FFF;
+}
+
+.first_screen__left_side {
+    width: 550px;
+    height: 450px;
+    margin-left: 120px;
+}
+
+.first_screen__right_side {
+    margin-right: 120px;
+}
+
+.first_screen__left_side_title {
+    font-size: 44px;
+    color: #2F281E;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.first_screen__left_side_text {
+    font-size: 18px;
+    color: #544837;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.button_first_screen {
+    width: 180px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #FFF;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/**Features**/
+.features {
+    display: flex;
+    width: 2200px;
+    height: 400px;
+    background: linear-gradient(179.61deg, rgba(255, 229, 210, 0.0001) 0.33%, rgba(255, 244, 229, 0.629261) 99.67%);
+    background-color: #FFF;
+    align-items: center;
+    justify-content: center;
+}
+
+.features_colom {
+    display: inline;
+    width: 270px;
+    height: 175px;
+
+
+}
+
+.features_colom__logo {
+
+}
