@@ -35,10 +35,38 @@ body {
 }
 
 .icon__icon-item {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+}
+
+.container__item .icon__icon-item {
+	width: 36px;
+	height: 36px;
+}
+
+.footer__nav {
+	display: flex;
 	width: 40px;
 	height: 40px;
 	align-items: center;
 	justify-content: center;
+	background: #fff;
+}
+
+.footer__nav:hover .icon__icon-item {
+	fill: #3db370;
+}
+
+.container div:hover {
+	border: 1px solid #3db370;
+	fill: #3db370;
+}
+
+.container div:hover .icon {
+	border: 1px solid #3db370;
+	fill: #3db370;
+	stroke: #3db370;
 }
 
 /**Section**/
