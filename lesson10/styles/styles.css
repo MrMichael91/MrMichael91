@@ -1,148 +1,190 @@
-body {
-    font-family: 'Montserrat', sans-serif;
+.main {
     width: 1440px;
-    height: 500px;
     margin: 0 auto;
-    background-color: #F2F2F2;
 }
 
-/**Herder**/
 .header {
-    display: flex;
-    background-color: #FFF;
-    width: 1440px;
-    height: 50px;
-    padding-bottom: 70px;
-}
-
-.wrapper {
-    display: flex;
-    width: 1200px;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto
-}
-
-.wrapper_nav ul li {
-    display: inline-flex;
-    margin-right: 20px;
-}
-
-.wrapper_nav ul li a:active {
-    color: #FF9900;
-}
-
-.wrapper_nav ul li a:hover {
-    text-decoration: underline;
-    text-decoration-color: aqua;
-}
-
-.wrapper_nav li:nth-child(4) {
+    max-width: 1170px;
     margin: 0 auto;
 }
 
-.wrapper_nav a {
+.header__container {
+    display: flex;
+    max-width: 1170px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__container ul li a {
     text-decoration: none;
 }
 
-.wrapper_nav ul {
-    padding-left: 0;
+.header__container ul li a:hover {
+    color: #18B5DC;
 }
 
-.wrapper_logo {
+.header__container ul {
     display: flex;
-    align-items: center;
-    font-size: 30px;
+    gap: 30px;
 }
 
-.wrapper_logo img {
-    padding-right: 12px;
-}
-
-.button_action button {
-    display: inline;
-    justify-content: space-evenly;
-    width: 110px;
-    height: 45px;
-    border-radius: 4px;
-    text-align: center;
-    font-size: 16px;
-    background-color: #FFF;
-    font-weight: 600;
-}
-
-.button_go {
-    margin-right: 25px;
-}
-
-.button_action button:hover,
-.button_first_screen:hover {
-    background-color: #FF9900;
-    color: #FFF;
-}
-
-/**First Screen**/
-
-.first_screen {
+.header__container ul li {
     display: inline-flex;
-    width: 1440px;
-    height: 600px;
-    background-color: #FFF;
-}
-
-.first_screen__left_side {
-    width: 550px;
-    height: 450px;
-    margin-left: 120px;
-}
-
-.first_screen__right_side {
-    margin-right: 120px;
-}
-
-.first_screen__left_side_title {
-    font-size: 44px;
-    color: #2F281E;
-    margin: 0 auto;
-    margin-top: 100px;
-}
-
-.first_screen__left_side_text {
-    font-size: 18px;
-    color: #544837;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-.button_first_screen {
-    width: 180px;
-    height: 50px;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: #FFF;
+    list-style: none;
+    align-items: center;
+    text-transform: uppercase;
     font-weight: 600;
-    margin-top: 20px;
+    font-size: 22px;
+    line-height: 24px;
+    font-family: "Lato", sans-serif;
+    color: #3C3C3C;
 }
 
-/**Features**/
-.features {
+.header-button {
+    width: 130px;
+    height: 42px;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #3C3C3C;
+    background: #fff;
+}
+
+.header-button:hover {
+    background: #18B5DC;
+    color: #fff;
+}
+
+/**section**/
+.section__container-title {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #3C3C3C;
+    margin-top: 150px;
+}
+
+.section__container-text {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #3C3C3C;
+    margin-bottom: 50px;
+}
+
+.section__container-image {
     display: flex;
-    width: 2200px;
-    height: 400px;
-    background: linear-gradient(179.61deg, rgba(255, 229, 210, 0.0001) 0.33%, rgba(255, 244, 229, 0.629261) 99.67%);
-    background-color: #FFF;
+    max-width: 1170px;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.section__container-image-item {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    background-size: contain;
+}
+
+.image-item-first {
+    background-image: url("/assets/image/John\ Handson.png");
+}
+
+.image-item-second {
+    background-image: url("/assets/image/Alex\ Cutter.png");
+}
+
+.image-item-third {
+    background-image: url("/assets/image/Elena\ Simpson.png");
+}
+
+.image-item-fourth {
+    background-image: url("/assets/image/Lily\ Allen.png");
+}
+
+.section__container-image-item:hover {
+    background: #18B5DC;
+    transition: 1s;
+}
+
+.section__container-image-title {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #282528;
+    margin-bottom: 0;
+}
+
+.section__container-image-text {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #646464;
+    margin: 0;
+}
+
+/**footer**/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 190px;
+}
+
+.footer__container ul li {
+    font-size: 18px;
+}
+
+.footer__container ul {
+    padding: 0;
+}
+
+.footer__container-icons {
+    display: flex;
+    gap: 10px;
+    fill: #18B5DC;
+}
+
+.footer__container-icons-icon {
+    display: flex;
+    width: 22px;
+    height: 22px;
+    padding: 10px;
     align-items: center;
     justify-content: center;
+    border: 1px solid #18B5DC;
 }
 
-.features_colom {
-    display: inline;
-    width: 270px;
-    height: 175px;
-
-
+.footer__container-icons-icon {
+    fill: #fff;
+    background: #5DCBE6;
 }
 
-.features_colom__logo {
+.footer__container-icons-icon:hover {
+    background: #fff;
+    fill: #18B5DC;
+}
 
+.section__container-image-nav {
+    display: none;
+}
+
+.section__container-image-item:hover .section__container-image-nav {
+    display: inline-flex;
+    position: absolute;
+    margin-right: 4px;
+
+    top: 42%;
+    left: 24%;
 }
