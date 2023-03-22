@@ -14,7 +14,7 @@
 	background: #fff;
 	border-radius: 50px;
 	border: 1px solid #9c69e2;
-	transition: 0.5s;
+	transition: 0.2s;
 	margin: 20px 0;
 }
 .header {
@@ -23,7 +23,7 @@
 	justify-content: space-between;
 	position: fixed;
 	background-color: #fff;
-	z-index: 1;
+	z-index: 2;
 	margin-top: -8px;
 	&__logo--nav {
 		display: flex;
@@ -49,6 +49,9 @@
 				display: flex;
 				align-items: end;
 				gap: 10px;
+				&:hover {
+					cursor: pointer;
+				}
 				&-circle {
 					display: flex;
 					width: 20px;
@@ -56,7 +59,6 @@
 					border-radius: 50%;
 					background: #9c69e2;
 				}
-
 				&-ellipse {
 					display: flex;
 					width: 20px;
@@ -98,30 +100,22 @@
 	}
 
 	&__button {
-		text-align: left;
-		padding-left: 23px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		.arrow {
-			display: flex;
-			position: absolute;
 			background: url("/assets/icons/arrow.svg");
-			background-repeat: no-repeat;
-			width: 26px;
+			width: 23px;
 			height: 16px;
-			right: 23px;
-			top: 42%;
-			transition: 0.5s;
+			margin-left: 20px;
+			transition: 0.2s;
 		}
 		&:hover {
 			background: #9c69e2;
 			color: #fff;
 			cursor: pointer;
 			.arrow {
-				background-image: url("/assets/icons/arrow-white.svg");
-				background-repeat: no-repeat;
-				width: 26px;
-				height: 16px;
-				right: 23px;
-				top: 42%;
+				background: url("/assets/icons/arrow-white.svg");
 			}
 		}
 	}
@@ -281,6 +275,8 @@
 			margin-left: 100px;
 		}
 		a {
+			display: flex;
+			align-items: center;
 			font-family: "Montserrat", sans-serif;
 			font-style: normal;
 			font-weight: 700;
@@ -290,6 +286,16 @@
 			color: #212353;
 			text-decoration: none;
 			margin-left: 100px;
+			transition: 0.2s;
+			&:hover {
+				color: #9c69e2;
+			}
+			.arrow {
+				background: url("/assets/icons/arrow.svg") no-repeat;
+				margin-left: 20px;
+				width: 23px;
+				height: 16px;
+			}
 		}
 	}
 	.container-box {
@@ -523,23 +529,22 @@
 		}
 
 		.footer-button-simple {
-			text-align: left;
-			padding-left: 23px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
 			.arrow {
-				display: inline-flex;
-				background: url("/assets/icons/arrow.svg");
+				background: url("/assets/icons/arrow.svg") no-repeat;
 				margin-left: 20px;
 				width: 23px;
 				height: 16px;
-				transition: 0.5s;
+				transition: 0.2s;
 			}
 			&:hover {
 				background: #9c69e2;
 				color: #fff;
 				cursor: pointer;
 				.arrow {
-					background-image: url("/assets/icons/arrow-white.svg");
-					background-repeat: no-repeat;
+					background: url("/assets/icons/arrow-white.svg") no-repeat;
 				}
 			}
 		}
@@ -572,23 +577,24 @@
 				align-items: end;
 				gap: 10px;
 				margin-right: 20px;
-
+				&:hover {
+					cursor: pointer;
+				}
 				&-circle {
 					display: flex;
 					width: 20px;
 					height: 20px;
 					border-radius: 50%;
 					background: #9c69e2;
-					transition: 0.5s;
+					transition: 0.2s;
 				}
-
 				&-ellipse {
 					display: flex;
 					width: 20px;
 					height: 35px;
 					border-radius: 20px;
 					background: #f063b8;
-					transition: 0.5s;
+					transition: 0.2s;
 				}
 			}
 		}
@@ -612,6 +618,10 @@
 				line-height: 29px;
 				letter-spacing: 0.01em;
 				color: #212353;
+				text-decoration: none;
+				&:hover {
+					color: #8a40ee;
+				}
 			}
 		}
 	}
@@ -646,7 +656,7 @@
 			line-height: 26px;
 			color: #4b5d68;
 			margin-top: 10px;
-			transition: 0.5s;
+			transition: 0.2s;
 			&:hover {
 				color: #8a40ee;
 				cursor: pointer;
@@ -663,7 +673,7 @@
 				background: #212353;
 				opacity: 0.1;
 				border: 1px solid transparent;
-				transition: 0.5s;
+				transition: 0.2s;
 			}
 
 			.facebook:hover {
