@@ -6,7 +6,7 @@
 //         alert('-1');
 //     } else if (a < b) {
 //         alert('1');
-//     } else if (a = b) {
+//     } else {
 //         alert('0');
 //     }
 // }
@@ -23,13 +23,12 @@
 // alert(factorial(6));
 
 //Завдання 5
+
 // function number(a, b, c) {
-// 	let numberMassif = [a] + [b] + [c];
-//     let sumNumber = +numberMassif;
-//     console.log(numberMassif, typeof numberMassif);
-//     console.log(sumNumber, typeof sumNumber);
+// 	let sumNumber = a.toString() + b + c;
+// 	console.log(sumNumber);
 // }
-// alert(number(3,2,2));
+// number(3, 2, 2);
 
 // Завдання 6
 // function areaCalculation(a, b) {
@@ -39,6 +38,6 @@
 // 	} else {
 // 		const areaSquare = Math.pow(a, 2);
 // 		console.log(areaSquare);
-// 	}  
+// 	}
 // }
 // areaCalculation(4, 7);
